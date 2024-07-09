@@ -1,0 +1,124 @@
+   /* General Styles */
+   body {
+    font-family: 'Arial', sans-serif;
+    /* background: linear-gradient(to right, #ece9e6, #ffffff); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+    background-color: #81B29A;
+  }
+
+  #container {
+
+    border: 3px solid #8338EC;
+    height: 350px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 350px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    background-color: #ADB6C4;
+
+  }
+
+  #container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px #bdc3c7;
+    /* margin: 0 150px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #buttons {
+
+    margin: 0 60px;
+  }
+
+  #start {
+
+    background-color: #058C42;
+  }
+
+  #stop {
+
+    background-color: red;
+  }
+
+  #speak {
+
+    background-color: #FCA311;
+  }
+
+  /* Button Styles */
+  button {
+    background-color: #2980b9;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #3498db;
+    transform: scale(1.05);
+  }
+
+  button:active {
+    background-color: #1abc9c;
+  }
+
+  /* Display Div Styles */
+  #userInput,
+  #nexusResponse {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px 25px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  #userInput {
+    color: #2980b9;
+  }
+
+  #nexusResponse {
+    color: #16a085;
+  }
+
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    #userInput,
+    #nexusResponse {
+      width: 90%;
+      padding: 15px;
+    }
+  }
